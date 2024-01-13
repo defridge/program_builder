@@ -154,9 +154,11 @@ def muscle_building_program():
                     break
                 elif option == 2:
                     print("Thank you! Building your program now...\n")
+                    three_days_per_wk_full_body_muscle_building_program()
                     break
                 elif option == 3:
                     print("Thank you! Building your program now...\n")
+                    four_days_per_wk_full_body_muscle_building_program()
                     break
                 else:
                     print("Invalid Choice")
@@ -220,26 +222,100 @@ def two_days_per_wk_full_body_muscle_building_program():
     
     print("You have chosen a 2 Day Per Week, Full Body Split, Muscle Building Program")
     print("Please find you program below: \n")
-    print("Day 1")
-    print("Barbell Bench Press, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Wide Grip Pulldowns, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Romanian Deadlift (RDL), 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Leg Extension, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Cable Lateral Raise, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Cable Bicep Curls, 1-2 sets, 5-8 reps, 2-3 mins rest")
-    print("Seated Calf Raise, 1-2 sets, 5-8 reps, 2-3 mins rest\n")
-    print("Day 2")
-    print("Pec Dec, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Chest Supported Row, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Seated Leg Curl, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Leg Press, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Shoulder Press Machine, 1-3 sets, 5-8 reps, 2-3 mins rest")
-    print("Cable Tricep Pushdown, 1-2 sets, 5-8 reps, 2-3 mins rest")
-    print("Standing Calf Raise, 1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 1")
+    print("\tBarbell Bench Press,         1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tWide Grip Pulldowns,         1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tRomanian Deadlift (RDL),     1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLeg Extension,               1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Lateral Raise,         1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Bicep Curls,           1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tSeated Calf Raise,           1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 2")
+    print("\tPec Dec,                     1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tChest Supported Row,         1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tSeated Leg Curl,             1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLeg Press,                   1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tShoulder Press Machine,      1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Tricep Pushdown,       1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tStanding Calf Raise,         1-2 sets, 5-8 reps, 2-3 mins rest\n")
     print("Please allow for at least one day off between Day's 1 and 2\n")
     print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
     main_menu()
 
+
+def three_days_per_wk_full_body_muscle_building_program():
+    """
+    This function prints a 3 day per week, full body muscle building program to the console.
+    """
+    
+    print("You have chosen a 3 Day Per Week, Full Body Split, Muscle Building Program")
+    print("Please find you program below: \n")
+    print("\tDay 1")
+    print("\tBarbell Bench Press,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tWide Grip Pulldowns,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tRomanian Deadlift (RDL),       1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLeg Extension,                 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Lateral Raise,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Bicep Curls,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 2")
+    print("\tIncline Bench Press,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tChest Supported Row,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLying Leg Curl,                1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tBulgarian Split Squat,         1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tRear Delt Flyes,               1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Tricep Pushdown,         1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 3")
+    print("\tPec Dec,                       1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tNarrow Grip Pulldown,          1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tSeated Leg Curl,               1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLeg Press,                     1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tShoulder Press Machine,        1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tSeated Calf Raise,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    
+    print("Please allow for at least one day off between Day's 1, 2 and 3\n")
+    print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
+    main_menu()
+
+
+def four_days_per_wk_full_body_muscle_building_program():
+    """
+    This function prints a 4 day per week, full body muscle building program to the console.
+    """
+    
+    print("You have chosen a 4 Day Per Week, Full Body Split, Muscle Building Program")
+    print("Please find you program below: \n")
+    print("\tDay 1")
+    print("\tBarbell Bench Press,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tWide Grip Pulldowns,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tRomanian Deadlift (RDL),       1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLeg Extension,                 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Lateral Raise,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Bicep Curls,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 2")
+    print("\tIncline Bench Press,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tChest Supported Row,           1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLying Leg Curl,                1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tBulgarian Split Squat,         1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tRear Delt Flyes,               1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tSeated Calf Raise,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 3")
+    print("\tDips,                          1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLat Prayer,                    1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLying Leg Curl,                1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tHack Squat,                    1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tT-Bar Row,                     1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Tricep Pushdown,         1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 4")
+    print("\tPec Dec,                       1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tNarrow Grip Pulldown,          1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tSeated Leg Curl,               1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLeg Press,                     1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tShoulder Press Machine,        1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("\tSeated Calf Raise,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    
+    print("Please allow for at least one day off between Day's 1, 2, 3 and 4\n")
+    print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
+    main_menu()
 
 
 
