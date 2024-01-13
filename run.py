@@ -1,6 +1,4 @@
 
-
-
 def main_menu():
     """
     Displays main menu and welcome message when program is started.
@@ -107,7 +105,8 @@ def program_options():
             muscle_building_program()
             break
         elif option == 2:
-            print("Program 2")
+            print("Thank you!\n")
+            strength_building_program()
             break
         elif option == 3:
             print("Program 3")
@@ -220,6 +219,7 @@ def muscle_building_program():
                     print("Invalid Choice")
         else:
             print("Invalid Choice")
+
 
 def two_days_per_wk_full_body_muscle_building_program():
     """
@@ -552,6 +552,19 @@ def five_six_days_per_wk_push_pull_legs_muscle_building_program():
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
     main_menu()
+
+
+def strength_building_program():
+    """
+    This function will first work out the 1 rep max of the users squat, bench and deadlift
+    and then build the program with target weights on those lifts.
+    """
+    print("To create the best Strength Building Program we must first work out your 1 rep max\nfor the Squat, Bench, and Deadlift.\n")
+    print("Please enter the weight you lifted (in kg's)\nand for how many reps you lifted it from the last time you preformed a barbell squat:")
+    print("Squat:")
+    squat_weight = input("Weight lifted (kg's):")
+    
+
 
 
 main_menu()
