@@ -30,22 +30,23 @@ def par_q():
     Will take the user through a series of medical questions that they must answer yes or no
     """
     while True:
-        q1 = input("Question 1:\nDo you have a heart condition? (Yes/No)\n")
+        q1 = input("Question 1: Do you have a heart condition? (Yes/No)\n")
 
         if q1 in ["No", "no", "NO", "n", "N"]:
-            q2 = input("Question 2:\nWhen you do physical activity, do you feel pain in your chest? (Yes/No)\n")
+            q2 = input("Question 2: When you do physical activity, do you feel pain in your chest? (Yes/No)\n")
 
             if q2 in ["No", "no", "NO", "n", "N"]:
-                q3 = input("Question 3:\nAre you pregnant? (Yes/No)\n")
+                q3 = input("Question 3: Are you pregnant? (Yes/No)\n")
 
                 if q3 in ["No", "no", "NO", "n", "N"]:
-                    q4 = input("Question 4:\nDo you have a joint or bone problem? (Yes/No)\n")
+                    q4 = input("Question 4: Do you have a joint or bone problem? (Yes/No)\n")
 
                     if q4 in ["No", "no", "NO", "n", "N"]:
-                        q5 = input("Question 5:\nDo you ever lose consciousness\nor do you lose your balance because of dizziness? (Yes/No)\n")
+                        q5 = input("Question 5: Do you ever lose consciousness\nor do you lose your balance because of dizziness? (Yes/No)\n")
 
                         if q5 in ["No", "no", "NO", "n", "N"]:
                             print("Thank you! You are clear to proceed\n")
+                            program_options()
                             break
 
                         elif q5 in ["Yes", "yes", "y", "YES", "Y"]:
@@ -82,6 +83,37 @@ def par_q():
 
         else:
             print("Invalid input. Please enter 'Yes' or 'No'.")
+
+
+def program_options():
+    """
+    Display options for prgram type so the user can choose.
+    """
+
+    print("Please choose for one of the following options below\n")
+    print("1. Muscle Building Program")
+    print("2. Strength Building Program")
+    print("3. Sports Specific Program\n")
+
+    while True:
+        try:
+            option = int(input("Enter Choice Here: \n"))
+        except ValueError:
+            print("Please enter a number")
+            continue
+
+        if option == 1:
+            print("Program 1")
+            break
+        elif option == 2:
+            print("Program 2")
+            break
+        elif option == 3:
+            print("Program 3")
+            break
+        else:
+            print("Invalid Choice")
+
 
 
 main_menu()
