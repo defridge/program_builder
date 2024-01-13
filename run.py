@@ -563,6 +563,7 @@ def strength_building_program():
     print("Please enter the weight you lifted (in kg's)\nand for how many reps you lifted it from the last time you preformed a barbell squat:")
     print("Squat:")
     squat_weight = input("Weight lifted (kg's):")
+    squat_reps =
     
 
 
