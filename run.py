@@ -97,13 +97,14 @@ def program_options():
 
     while True:
         try:
-            option = int(input("Enter Choice Here: \n"))
+            option = int(input("Enter your choice here: \n"))
         except ValueError:
             print("Please enter a number")
             continue
 
         if option == 1:
-            print("Program 1")
+            print("Thank you!\n")
+            muscle_building_program()
             break
         elif option == 2:
             print("Program 2")
@@ -113,6 +114,132 @@ def program_options():
             break
         else:
             print("Invalid Choice")
+
+
+def muscle_building_program():
+    """
+    Function to gather info to start building Muscle Building gym program.
+    """
+
+    print("To create the best Muscle Building Gym Program for you we have a few questions to ask.\n")
+    print("What type of training split are you looking for? \n")
+    print("1. Full Body Training Split")
+    print("2. Upper/Lower Training Split")
+    print("3. Push, Pull, Legs Training Split\n")
+
+    while True:
+        try:
+            option = int(input("Enter your choice here: \n"))
+        except ValueError:
+            print("Please enter a number")
+            continue
+
+        if option == 1:
+            print("Thank you! \n")
+            print("How many days a week would you like the program to be? \n")
+            print("1. I would like to train 2 days per week")
+            print("2. I would like to train 3 days per week")
+            print("3. I would like to train 4 days per week\n")
+            while True:
+                try:
+                    option = int(input("Enter your choice here: \n"))
+                except ValueError:
+                    print("Please enter a number")
+                    continue
+                    break
+
+                if option == 1:
+                    print("Thank you! Building your program now...\n")
+                    two_days_per_wk_full_body_muscle_building_program()
+                    break
+                elif option == 2:
+                    print("Thank you! Building your program now...\n")
+                    break
+                elif option == 3:
+                    print("Thank you! Building your program now...\n")
+                    break
+                else:
+                    print("Invalid Choice")
+        elif option == 2:
+            print("Thank you! \n")
+            print("How many days a week would you like the program to be? \n")
+            print("1. I would like to train 2 days per week")
+            print("2. I would like to train 3 days per week")
+            print("3. I would like to train 4 days per week\n")
+            while True:
+                try:
+                    option = int(input("Enter your choice here: \n"))
+                except ValueError:
+                    print("Please enter a number")
+                    continue
+                    break
+
+                if option == 1:
+                    print("Thank you! Building your program now...\n")
+                    break
+                elif option == 2:
+                    print("Thank you! Building your program now...\n")
+                    break
+                elif option == 3:
+                    print("Thank you! Building your program now...\n")
+                    break
+                else:
+                    print("Invalid Choice")
+        elif option == 3:
+            print("Thank you! \n")
+            print("How many days a week would you like the program to be? \n")
+            print("1. I would like to train 2 days per week")
+            print("2. I would like to train 3 days per week")
+            print("3. I would like to train 4 days per week\n")
+            while True:
+                try:
+                    option = int(input("Enter your choice here: \n"))
+                except ValueError:
+                    print("Please enter a number")
+                    continue
+                    break
+
+                if option == 1:
+                    print("Thank you! Building your program now...\n")
+                    break
+                elif option == 2:
+                    print("Thank you! Building your program now...\n")
+                    break
+                elif option == 3:
+                    print("Thank you! Building your program now...\n")
+                    break
+                else:
+                    print("Invalid Choice")
+        else:
+            print("Invalid Choice")
+
+def two_days_per_wk_full_body_muscle_building_program():
+    """
+    This function prints a 2 day per week, full body muscle building program to the console.
+    """
+    
+    print("You have chosen a 2 Day Per Week, Full Body Split, Muscle Building Program")
+    print("Please find you program below: \n")
+    print("Day 1")
+    print("Barbell Bench Press, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Wide Grip Pulldowns, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Romanian Deadlift (RDL), 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Leg Extension, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Cable Lateral Raise, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Cable Bicep Curls, 1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("Seated Calf Raise, 1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("Day 2")
+    print("Pec Dec, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Chest Supported Row, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Seated Leg Curl, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Leg Press, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Shoulder Press Machine, 1-3 sets, 5-8 reps, 2-3 mins rest")
+    print("Cable Tricep Pushdown, 1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("Standing Calf Raise, 1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("Please allow for at least one day off between Day's 1 and 2\n")
+    print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
+    main_menu()
+
 
 
 
