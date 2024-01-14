@@ -1,3 +1,4 @@
+import numpy as np
 
 def main_menu():
     """
@@ -89,9 +90,10 @@ def program_options():
     """
 
     print("Please choose for one of the following options below\n")
+    print("............................")
     print("1. Muscle Building Program")
     print("2. Strength Building Program")
-    print("3. Sports Specific Program\n")
+    print("............................\n")
 
     while True:
         try:
@@ -108,9 +110,9 @@ def program_options():
             print("Thank you!\n")
             strength_building_program()
             break
-        elif option == 3:
-            print("Program 3")
-            break
+        # elif option == 3:
+        #     print("Program 3")
+        #     break
         else:
             print("Invalid Choice")
 
@@ -277,7 +279,6 @@ def three_days_per_wk_full_body_muscle_building_program():
     print("\tLeg Press,                     1-3 sets, 5-8 reps, 2-3 mins rest")
     print("\tShoulder Press Machine,        1-3 sets, 5-8 reps, 2-3 mins rest")
     print("\tSeated Calf Raise,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
-    
     print("Please allow for at least one day off between Day's 1, 2 and 3\n")
     print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
     main_menu()
@@ -318,7 +319,6 @@ def four_days_per_wk_full_body_muscle_building_program():
     print("\tLeg Press,                     1-3 sets, 5-8 reps, 2-3 mins rest")
     print("\tShoulder Press Machine,        1-3 sets, 5-8 reps, 2-3 mins rest")
     print("\tSeated Calf Raise,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
-    
     print("Please allow for at least one day off between Day's 1, 2, 3 and 4\n")
     print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
     main_menu()
@@ -554,18 +554,79 @@ def five_six_days_per_wk_push_pull_legs_muscle_building_program():
     main_menu()
 
 
+def calculate_1rm(reps, weight):
+    """
+    Estimate 1RM based on the number of reps anpreformed with a certain weight.
+    The 1RM will be calculated using the Brzycki formula.
+    """
+
+    x = weight / (1.0278 - 0.0278 * reps)
+    estimated_1rm = int(np.around(x))
+
+    return estimated_1rm
+
+
 def strength_building_program():
     """
     This function will first work out the 1 rep max of the users squat, bench and deadlift
     and then build the program with target weights on those lifts.
     """
     print("To create the best Strength Building Program we must first work out your 1 rep max\nfor the Squat, Bench, and Deadlift.\n")
-    print("Please enter the weight you lifted (in kg's)\nand for how many reps you lifted it from the last time you preformed a barbell squat:")
-    print("Squat:")
-    squat_weight = input("Weight lifted (kg's):")
-    squat_reps =
-    
+    print("Please enter the weight you lifted (in kg's)\nand for how many reps you lifted it from the last time you preformed a Squat,\nBench, and Deadlift\n")
+    while True:
+        try:
+            print("Squat:")
+            squat_weight = float(input("Weight lifted (kg's): "))
+            squat_reps = int(input("Number of reps: "))
 
+            print("Bench:")
+            bench_weight = float(input("Weight lifted (kg's): "))
+            bench_reps = int(input("Number of reps: "))
+
+            print("Deadlift:")
+            deadlift_weight = float(input("Weight lifted (kg's): "))
+            deadlift_reps = int(input("Number of reps: "))
+        except ValueError:
+            print("Please enter a valid number")
+            continue
+        break
+
+    squat_1rm = calculate_1rm(squat_reps, squat_weight)
+    bench_1rm = calculate_1rm(bench_reps, bench_weight)
+    deadlift_1rm = calculate_1rm(deadlift_reps, deadlift_weight)
+
+    print("Calculating 1RM's...\n")
+    print(f"Your esitamted Squat 1RM is {squat_1rm}kg\n")
+    print(f"Your esitamted Bench 1RM is {bench_1rm}kg\n")
+    print(f"Your esitamted Deadlift 1RM is {deadlift_1rm}kg\n")
+    print("Creating Strength Building Program...\n")
+    print("Please find you program below: \n")
+    print("\tDay 1")
+    print("\tBarbell Bench Press,           4 sets, 2-3 reps, 4-5 mins rest")
+    print("\tDeadlift                       4 sets, 2-3 reps, 4-5 mins rest\n")
+    print("\tLeg Extension,                 1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLat Pulldown,                  1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tRear Delt Flyes,               1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tCable Bicep Curls,             1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 2")
+    print("\tShoulder Press,                4 sets, 2-3 reps, 4-5 mins rest")
+    print("\tPull Ups,                      4 sets, 2-3 reps, 4-5 mins rest\n")
+    print("\tPec Dec,                       1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tBulgarian Split Squat,         1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tHip Thrust,                    1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tNarrow Grip Rows,              1-2 sets, 5-8 reps, 2-3 mins rest\n")
+    print("\tDay 3")
+    print("\tSquat,                         4 sets, 2-3 reps, 4-5 mins rest\n")
+    print("\tSeated Leg Curl,               1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tRDL,                           1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tIncline Bench Press,           1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tLateral Raise,                 1-2 sets, 5-8 reps, 2-3 mins rest")
+    print("\tTricep Pushdown,               1-2 sets, 5-8 reps, 2-3 mins rest\n")
+
+    print("Please allow for at least one day off between Day's 1, 2, and 3\n")
+    print("Use 80% of your 1RM for your Squat, Bench, and Deadlift\n")
+    print("Thank you for using this online Program Builder!\nWe wish you all the best with your fitness journey!")
+    main_menu()
 
 
 main_menu()
