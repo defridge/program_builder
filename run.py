@@ -227,7 +227,7 @@ def two_days_per_wk_full_body_muscle_building_program():
     """
     This function prints a 2 day per week, full body muscle building program to the console.
     """
-    
+
     print("You have chosen a 2 Day Per Week, Full Body Split, Muscle Building Program")
     print("Please find you program below: \n")
     print("\tDay 1")
@@ -255,7 +255,7 @@ def three_days_per_wk_full_body_muscle_building_program():
     """
     This function prints a 3 day per week, full body muscle building program to the console.
     """
-    
+
     print("You have chosen a 3 Day Per Week, Full Body Split, Muscle Building Program")
     print("Please find you program below: \n")
     print("\tDay 1")
@@ -393,7 +393,7 @@ def four_days_per_wk_upper_lower_muscle_building_program():
     """
     This function prints a 4 day per week, upper/lower muscle building program to the console.
     """
-    
+
     print("You have chosen a 4 Day Per Week, Upper/Lower Split, Muscle Building Program")
     print("Please find you program below: \n")
     print("\tUpper Day 1")
@@ -432,7 +432,7 @@ def three_days_per_wk_push_pull_legs_muscle_building_program():
     """
     This function prints a 3 day per week, push/pull/legs muscle building program to the console.
     """
-    
+
     print("You have chosen a 3 Day Per Week, Push/Pull/Legs Split, Muscle Building Program")
     print("Please find you program below: \n")
     print("\tPush Day")
@@ -509,7 +509,7 @@ def five_six_days_per_wk_push_pull_legs_muscle_building_program():
     """
     This function prints a 5/6 day per week, push/pull/legs muscle building program to the console.
     """
-    
+
     print("You have chosen a 5/6 Day Per Week, Push/Pull/Legs Split, Muscle Building Program")
     print("Please find you program below: \n")
     print("\tPush Day 1")
