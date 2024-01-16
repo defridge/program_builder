@@ -576,16 +576,16 @@ def strength_building_program():
     while True:
         try:
             print("Squat:")
-            squat_weight = float(input("Weight lifted (kg's): "))
-            squat_reps = int(input("Number of reps: "))
+            squat_weight = float(input("Weight lifted (kg's):\n"))
+            squat_reps = int(input("Number of reps:\n"))
 
             print("Bench:")
-            bench_weight = float(input("Weight lifted (kg's): "))
-            bench_reps = int(input("Number of reps: "))
+            bench_weight = float(input("Weight lifted (kg's):\n"))
+            bench_reps = int(input("Number of reps:\n"))
 
             print("Deadlift:")
-            deadlift_weight = float(input("Weight lifted (kg's): "))
-            deadlift_reps = int(input("Number of reps: "))
+            deadlift_weight = float(input("Weight lifted (kg's):\n"))
+            deadlift_reps = int(input("Number of reps:\n"))
         except ValueError:
             print("Please enter a valid number")
             continue
