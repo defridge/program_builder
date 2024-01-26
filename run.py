@@ -23,65 +23,93 @@ def main_menu():
         except ValueError:
             print("Invalid input. Please enter 'Yes' or 'No'.")
 
-
 def par_q():
     """
     Will take the user through a series of medical questions that they must answer yes or no
     """
     while True:
-        q1 = input("Question 1: Do you have a heart condition? (Yes/No)\n")
+        questions = [
+            "Do you have a heart condition?",
+            "When you do physical activity, do you feel pain in your chest?",
+            "Are you pregnant?",
+            "Do you have a joint or bone problem?",
+            "Do you ever lose consciousness or do you lose your balance because of dizziness?"
+        ]
 
-        if q1 in ["No", "no", "NO", "n", "N"]:
-            q2 = input("Question 2: When you do physical activity, do you feel pain in your chest? (Yes/No)\n")
-
-            if q2 in ["No", "no", "NO", "n", "N"]:
-                q3 = input("Question 3: Are you pregnant? (Yes/No)\n")
-
-                if q3 in ["No", "no", "NO", "n", "N"]:
-                    q4 = input("Question 4: Do you have a joint or bone problem? (Yes/No)\n")
-
-                    if q4 in ["No", "no", "NO", "n", "N"]:
-                        q5 = input("Question 5: Do you ever lose consciousness\nor do you lose your balance because of dizziness? (Yes/No)\n")
-
-                        if q5 in ["No", "no", "NO", "n", "N"]:
-                            print("Thank you! You are clear to proceed\n")
-                            program_options()
-                            break
-
-                        elif q5 in ["Yes", "yes", "y", "YES", "Y"]:
-                            print("Question 5 answered 'Yes'. Please obtain medical clearance to before continuing")
-                            break
-
-                        else:
-                            print("Invalid input. Please enter 'Yes' or 'No'.")
-
-                    elif q4 in ["Yes", "yes", "y", "YES", "Y"]:
-                        print("Question 4 answered 'Yes'. Please obtain medical clearance to before continuing")
-                        break
-
-                    else:
-                        print("Invalid input. Please enter 'Yes' or 'No'.")
-
-                elif q3 in ["Yes", "yes", "y", "YES", "Y"]:
-                    print("Question 3 answered 'Yes'. Please obtain medical clearance to before continuing")
+        for i, question in enumerate(questions, start=1):
+            while True:
+                answer = input(f"Question {i}: {question} (Yes/No)\n").lower()
+                if answer in ["No", "no", "NO", "n", "N", "Yes", "yes", "y", "YES", "Y"]:
                     break
-
                 else:
                     print("Invalid input. Please enter 'Yes' or 'No'.")
 
-            elif q2 in ["Yes", "yes", "y", "YES", "Y"]:
-                print("Question 2 answered 'Yes'. Please obtain medical clearance to before continuing")
-                break
+            if answer in ["Yes", "yes", "y", "YES", "Y"]:
+                print(f"Question {i} answered 'Yes'. Please obtain medical clearance before continuing.")
+                return
 
-            else:
-                print("Invalid input. Please enter 'Yes' or 'No'.")
+        print("Thank you! You are clear to proceed.\n")
+        program_options()
+        break
 
-        elif q1 in ["Yes", "yes", "y", "YES", "Y"]:
-            print("Question 1 answered 'Yes'. Please obtain medical clearance to before continuing")
-            break
+# def par_q():
+#     """
+#     Will take the user through a series of medical questions that they must answer yes or no
+#     """
+#     while True:
+#         q1 = input("Question 1: Do you have a heart condition? (Yes/No)\n")
 
-        else:
-            print("Invalid input. Please enter 'Yes' or 'No'.")
+#         if q1 in ["No", "no", "NO", "n", "N"]:
+#             q2 = input("Question 2: When you do physical activity, do you feel pain in your chest? (Yes/No)\n")
+
+#             if q2 in ["No", "no", "NO", "n", "N"]:
+#                 q3 = input("Question 3: Are you pregnant? (Yes/No)\n")
+
+#                 if q3 in ["No", "no", "NO", "n", "N"]:
+#                     q4 = input("Question 4: Do you have a joint or bone problem? (Yes/No)\n")
+
+#                     if q4 in ["No", "no", "NO", "n", "N"]:
+#                         q5 = input("Question 5: Do you ever lose consciousness\nor do you lose your balance because of dizziness? (Yes/No)\n")
+
+#                         if q5 in ["No", "no", "NO", "n", "N"]:
+#                             print("Thank you! You are clear to proceed\n")
+#                             program_options()
+#                             break
+
+#                         elif q5 in ["Yes", "yes", "y", "YES", "Y"]:
+#                             print("Question 5 answered 'Yes'. Please obtain medical clearance to before continuing")
+#                             break
+
+#                         else:
+#                             print("Invalid input. Please enter 'Yes' or 'No'.")
+
+#                     elif q4 in ["Yes", "yes", "y", "YES", "Y"]:
+#                         print("Question 4 answered 'Yes'. Please obtain medical clearance to before continuing")
+#                         break
+
+#                     else:
+#                         print("Invalid input. Please enter 'Yes' or 'No'.")
+
+#                 elif q3 in ["Yes", "yes", "y", "YES", "Y"]:
+#                     print("Question 3 answered 'Yes'. Please obtain medical clearance to before continuing")
+#                     break
+
+#                 else:
+#                     print("Invalid input. Please enter 'Yes' or 'No'.")
+
+#             elif q2 in ["Yes", "yes", "y", "YES", "Y"]:
+#                 print("Question 2 answered 'Yes'. Please obtain medical clearance to before continuing")
+#                 break
+
+#             else:
+#                 print("Invalid input. Please enter 'Yes' or 'No'.")
+
+#         elif q1 in ["Yes", "yes", "y", "YES", "Y"]:
+#             print("Question 1 answered 'Yes'. Please obtain medical clearance to before continuing")
+#             break
+
+#         else:
+#             print("Invalid input. Please enter 'Yes' or 'No'.")
 
 
 def program_options():
