@@ -1,5 +1,8 @@
 import numpy as np
 
+valid_yes_response = ["Yes", "yes", "YES", "y", "Y"]
+valid_no_response = ["No", "no", "NO", "y", "N"]
+
 def main_menu():
     """
     Displays main menu and welcome message when program is started.
@@ -12,11 +15,11 @@ def main_menu():
         response = input(prompt + "\n")
 
         try:
-            if response in ["Yes", "yes", "y", "YES", "Y"]:
+            if response in valid_yes_response:
                 print("Proceeding...\n")
                 par_q()
             else:
-                if response in ["No", "no", "NO", "n", "N"]:
+                if response in valid_no_response:
                     print("That's no problem! Come back when you are ready!")
                 else:
                     print("Invalid response. Please enter 'Yes' or 'No'.")
@@ -39,12 +42,12 @@ def par_q():
         for i, question in enumerate(questions, start=1):
             while True:
                 answer = input(f"Question {i}: {question} (Yes/No)\n").lower()
-                if answer in ["No", "no", "NO", "n", "N", "Yes", "yes", "y", "YES", "Y"]:
+                if answer in valid_yes_response or valid_no_response:
                     break
                 else:
                     print("Invalid input. Please enter 'Yes' or 'No'.")
 
-            if answer in ["Yes", "yes", "y", "YES", "Y"]:
+            if answer in valid_yes_response:
                 print(f"Question {i} answered 'Yes'. Please obtain medical clearance before continuing.")
                 return
 
