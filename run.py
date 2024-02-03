@@ -10,7 +10,7 @@ def main_menu():
     """
     while True:
         print("***************************************\n")
-        print("WECOME TO OUR ONLINE GYM PROGRAM BUILDER.\n")
+        print("WELCOME TO OUR ONLINE GYM PROGRAM BUILDER.\n")
         print("Before we get started building your program\n"
               "we have a few quick medical questions you must answer.\n")
         prompt = "Are you ready to proceed: (Yes/No)"
@@ -41,7 +41,7 @@ def par_q_medical_form():
             "Are you pregnant?",
             "Do you have a joint or bone problem?",
             "Do you ever lose consciousness or "
-            "do you lose your balance because of dizziness?"
+            "Do you lose your balance because of dizziness?"
         ]
 
         for i, question in enumerate(questions, start=1):
@@ -64,7 +64,7 @@ def par_q_medical_form():
 
 def program_options():
     """
-    Display options for prgram type so the user can choose.
+    Display options for program type so the user can choose.
     """
 
     print("Please choose for one of the following options below\n")
@@ -88,16 +88,13 @@ def program_options():
             print("Thank you!\n")
             strength_building_program()
             break
-        # elif option == 3:
-        #     print("Program 3")
-        #     break
         else:
             print("Invalid Choice")
 
 
 def muscle_building_program():
     """
-    Function to gather info to start building Muscle Building gym program.
+    Function to gather info to start building a Muscle Building gym program.
     """
 
     print("To create the best Muscle Building Gym Program "
@@ -574,7 +571,7 @@ def five_six_days_per_wk_p_p_l_muscle_building_program():
 
 def calculate_1rm(reps, weight):
     """
-    Estimate 1RM based on the number of reps anpreformed with a certain weight.
+    Estimate 1RM based on the number of reps performed with a certain weight.
     The 1RM will be calculated using the Brzycki formula.
     """
 
@@ -593,7 +590,7 @@ def strength_building_program():
     print("To create the best Strength Building Program we must first "
           "work out your 1 rep max\nfor the Squat, Bench, and Deadlift.\n")
     print("Please enter the weight you lifted (in kg's)\nand for "
-          "how many reps you lifted it from the last time you preformed "
+          "how many reps you lifted it from the last time you performed "
           "a Squat,\nBench, and Deadlift\n")
     while True:
         try:
@@ -618,14 +615,16 @@ def strength_building_program():
     deadlift_1rm = calculate_1rm(deadlift_reps, deadlift_weight)
 
     print("Calculating 1RM's...\n")
-    print(f"Your esitamted Squat 1RM is {squat_1rm}kg\n")
-    print(f"Your esitamted Bench 1RM is {bench_1rm}kg\n")
-    print(f"Your esitamted Deadlift 1RM is {deadlift_1rm}kg\n")
+    print(f"Your estimated Squat 1RM is {squat_1rm}kg\n")
+    print(f"Your estiamted Bench 1RM is {bench_1rm}kg\n")
+    print(f"Your estiamted Deadlift 1RM is {deadlift_1rm}kg\n")
     print("Creating Strength Building Program...\n")
     print("Please find you program below: \n")
     print("\tDay 1")
-    print(f"\tBarbell Bench Press,           4 sets, of {int(bench_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest")
-    print(f"\tDeadlift                       4 sets, of {int(deadlift_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
+    print(f"\tBarbell Bench Press,           4 sets, of "
+          f"{int(bench_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest")
+    print(f"\tDeadlift                       4 sets, of "
+          f"{int(deadlift_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
     print("\tLeg Extension,                 1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tLat Pulldown,                  1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRear Delt Flyes,               1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -640,7 +639,8 @@ def strength_building_program():
     print("\tNarrow Grip Rows,              1-2 sets, 5-8 reps, "
           "2-3 mins rest\n")
     print("\tDay 3")
-    print(f"\tSquat,                         4 sets, of {int(squat_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
+    print(f"\tSquat,                         4 sets, of "
+          f"{int(squat_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
     print("\tSeated Leg Curl,               1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRDL,                           1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tIncline Bench Press,           1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -649,10 +649,40 @@ def strength_building_program():
           "2-3 mins rest\n")
 
     print("Please allow for at least one day off between Day's 1, 2, and 3\n")
-    print("Use 80% of your 1RM for your Squat, Bench, and Deadlift\n")
+    print("The weight to be lifted in the Squat, Bench, and Deadlift "
+          "is 80% of your 1 rep max\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!")
-    main_menu()
+    exit_or_restart()
+
+
+def exit_or_restart():
+    """
+    Function to either restart or exit the program builder
+    """
+
+    print("Please choose for one of the following options below\n")
+    print("............................")
+    print("1. Restart Program Builder")
+    print("2. Exit")
+    print("............................\n")
+
+    while True:
+        try:
+            option = int(input("Enter your choice here: \n"))
+        except ValueError:
+            print("Please enter a number")
+            continue
+
+        if option == 1:
+            main_menu()
+            break
+        elif option == 2:
+            print("Exiting Program Builder\n")
+            exit()
+            break
+        else:
+            print("Invalid Choice")
 
 
 main_menu()
