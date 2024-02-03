@@ -226,8 +226,8 @@ def two_days_per_wk_full_body_muscle_building_program():
     print("\tStanding Calf Raise,         1-2 sets, 5-8 reps, 2-3 mins rest\n")
     print("Please allow for at least one day off between Day's 1 and 2\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey!\n")
+    exit_or_restart()
 
 
 def three_days_per_wk_full_body_muscle_building_program():
@@ -266,8 +266,8 @@ def three_days_per_wk_full_body_muscle_building_program():
           "2-3 mins rest\n")
     print("Please allow for at least one day off between Day's 1, 2 and 3\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey!\n")
+    exit_or_restart()
 
 
 def four_days_per_wk_full_body_muscle_building_program():
@@ -314,8 +314,8 @@ def four_days_per_wk_full_body_muscle_building_program():
     print("Please allow for at least one day off between "
           "Day's 1, 2, 3 and 4\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey!\n")
+    exit_or_restart()
 
 
 def two_days_per_wk_upper_lower_muscle_building_program():
@@ -342,8 +342,8 @@ def two_days_per_wk_upper_lower_muscle_building_program():
     print("Please allow for at least one day "
           "off between Upper and Lower days\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey!\n")
+    exit_or_restart()
 
 
 def three_days_per_wk_upper_lower_muscle_building_program():
@@ -387,8 +387,8 @@ def three_days_per_wk_upper_lower_muscle_building_program():
     print("Week 3: Upper 1, Lower 1, Upper 2")
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey!\n")
+    exit_or_restart()
 
 
 def four_days_per_wk_upper_lower_muscle_building_program():
@@ -430,8 +430,8 @@ def four_days_per_wk_upper_lower_muscle_building_program():
     print("Week 1: Upper 1, Lower 1, Upper 2, Lower 2")
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey!\n")
+    exit_or_restart()
 
 
 def three_days_per_wk_push_pull_legs_muscle_building_program():
@@ -461,8 +461,8 @@ def three_days_per_wk_push_pull_legs_muscle_building_program():
     print("\tCable Crunch,                1-2 sets, 5-8 reps, 2-3 mins rest\n")
     print("Please allow for at least one day off between training days days\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey!\n")
+    exit_or_restart()
 
 
 def four_days_per_wk_push_pull_legs_muscle_building_program():
@@ -513,8 +513,8 @@ def four_days_per_wk_push_pull_legs_muscle_building_program():
     print("Week 3: Legs 1, Push 2, Pull 2, Legs 2")
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey\n!")
+    exit_or_restart()
 
 
 def five_six_days_per_wk_p_p_l_muscle_building_program():
@@ -565,8 +565,8 @@ def five_six_days_per_wk_p_p_l_muscle_building_program():
     print("Week 1 (6 days): Push 1, Pull 1, Legs 1, Push 2, Pull 2, Legs 3")
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
-    main_menu()
+          "We wish you all the best with your fitness journey\n!")
+    exit_or_restart()
 
 
 def calculate_1rm(reps, weight):
@@ -652,7 +652,7 @@ def strength_building_program():
     print("The weight to be lifted in the Squat, Bench, and Deadlift "
           "is 80% of your 1 rep max\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey!")
+          "We wish you all the best with your fitness journey!\n")
     exit_or_restart()
 
 
@@ -663,8 +663,9 @@ def exit_or_restart():
 
     print("Please choose for one of the following options below\n")
     print("............................")
-    print("1. Restart Program Builder")
-    print("2. Exit")
+    print("1. Go to Strength Building Program")
+    print("2. Go to Muscle Building Program")
+    print("3. Main Menu")
     print("............................\n")
 
     while True:
@@ -675,12 +676,13 @@ def exit_or_restart():
             continue
 
         if option == 1:
-            main_menu()
+            strength_building_program()
             break
         elif option == 2:
-            print("Exiting Program Builder\n")
-            exit()
+            muscle_building_program()
             break
+        elif option == 3:
+            main_menu()
         else:
             print("Invalid Choice")
 
