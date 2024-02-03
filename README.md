@@ -1,32 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Program Builder
 
-Welcome,
+This Python based Program Builder is designed to allow the user to create a custom gym training program that is specific to their needs. The program has 2 options for a gym program, Muscle Building and Strength Building and depending on the information, such as the type of split they would like, the number of days they are looking to train and the weight they lifted on their last gym session the program will build a full workout that the user can follow and take all the guesswork out of their training.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+![Program Builder Menu Page](docs/readmepics/program_builder.png)
 
-## Reminders
+## Features
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Site Goals
 
-## Creating the Heroku app
+* The goal of the site is to provide the user with a very simple but detailed approach to creating a gym program tailored to thier goals.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Target Audience
 
-1. `heroku/python`
-2. `heroku/nodejs`
+* Anyone who is familiar with a gym environment and resistance training exercises but doesn't know where to start with regards to the program to follow.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
