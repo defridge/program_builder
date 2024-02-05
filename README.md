@@ -14,3 +14,39 @@ This Python based Program Builder is designed to allow the user to create a cust
 
 * Anyone who is familiar with a gym environment and resistance training exercises but doesn't know where to start with regards to the program to follow.
 
+### App Walkthrough
+
+* MAIN MENU
+    * Upon loading the app the user will be welcomed and asked if they are ready to first answer a series of medical questions (Medical Par-Q Form) before a gym program is created.
+    * This is to ensure that before the user starts training that there are no issues that may cause an injury.
+    * This user is asked to answer yes or no. Yes will bring them to the questions and no will ask them to return to the app when they are ready
+
+![Main Menu](docs/readmepics/main_menu.png)
+
+* MEDICAL QUESTIONS (Medical Par-Q Form)
+    * There are 5 questions in total the user must answer one at a time.
+        * Question 1: Do you have a heart condition? (Yes/No)
+        * Question 2: When you do physical activity, do you feel pain in your chest? (Yes/No)
+        * Question 3: Are you pregnant? (Yes/No)
+        * Question 4: Do you have a joint or bone problem? (Yes/No)
+        * Question 5: Do you ever lose consciousness or Do you lose your balance because of dizziness? (Yes/No)
+
+![Par-Q Questions](docs/readmepics/par_q.png)
+
+* If the user answers "Yes" to any of these questions they will be shown a message asking them to first obtain medical clearance before continuing and the app will jump back to the main menu section.
+
+![Yes response to Par-Q Questions](docs/readmepics/yes_par_q.png)
+
+* If the user answers “No” to all questions they will be clear to proceed to the next section of the app.
+
+![No response to Par-Q Questions](docs/readmepics/no_par_q.png)
+
+* PROGRAM OPTIONS
+    * After the user has passed the medical questions they are asked to choose from 2 types of gym program.
+        * 1. Muscle Building Program
+        * 2. Strength Building Program
+    * The user must enter 1 or 2 to make their selection.
+
+![Program Options](docs/readmepics/program_options.png)
+
+* MUSCLE BUILDING PROGRAM

@@ -97,7 +97,7 @@ def muscle_building_program():
     Function to gather info to start building a Muscle Building gym program.
     """
 
-    print("To create the best Muscle Building Gym Program "
+    print("To create the best Muscle\n Building Gym Program "
           "for you we have a few questions to ask.\n")
     print("What type of training split are you looking for? \n")
     print("1. Full Body Training Split")
@@ -524,7 +524,7 @@ def five_six_days_per_wk_p_p_l_muscle_building_program():
     """
 
     print("You have chosen a 5/6 Day Per Week, "
-          "Push/Pull/Legs Split, Muscle Building Program")
+          "Push/Pull/Legs Split,\n Muscle Building Program")
     print("Please find you program below: \n")
     print("\tPush Day 1")
     print("\tBarbell Bench Press,         1-3 sets, 5-8 reps, 2-3 mins rest")
@@ -587,7 +587,7 @@ def strength_building_program():
     bench and deadlift
     and then build the program with target weights on those lifts.
     """
-    print("To create the best Strength Building Program we must first "
+    print("To create the best Strength Building Program\n we must first "
           "work out your 1 rep max\nfor the Squat, Bench, and Deadlift.\n")
     print("Please enter the weight you lifted (in kg's)\nand for "
           "how many reps you lifted it from the last time you performed "
@@ -649,7 +649,7 @@ def strength_building_program():
           "2-3 mins rest\n")
 
     print("Please allow for at least one day off between Day's 1, 2, and 3\n")
-    print("The weight to be lifted in the Squat, Bench, and Deadlift "
+    print("The weight to be lifted in the\n Squat, Bench, and Deadlift "
           "is 80% of your 1 rep max\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
