@@ -44,9 +44,19 @@ This Python based Program Builder is designed to allow the user to create a cust
 * PROGRAM OPTIONS
     * After the user has passed the medical questions they are asked to choose from 2 types of gym program.
         * 1. Muscle Building Program
-        * 2. Strength Building Program
+        * 1. Strength Building Program
     * The user must enter 1 or 2 to make their selection.
 
 ![Program Options](docs/readmepics/program_options.png)
 
 * MUSCLE BUILDING PROGRAM
+    * If the user chooses the Muscle Building Program they are then asked about what type of muscle building program they would like, the options are:
+        * 1. Full Body Training Split
+        * 1. Upper/Lower Training Split
+        * 1. Push, Pull, Legs Training Split
+    * The user will then select and option by inputting 1, 2, or 3
+
+![Muscle Building Program](docs/readmepics/muscle_building_program.png)
+
+* MUSCLE BUILDING PROGRAM - FULL BODY TRAINING SPLIT
+    * 
