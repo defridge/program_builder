@@ -68,4 +68,14 @@ This Python based Program Builder is designed to allow the user to create a cust
 ![Frequency 2](docs/readmepics/frequency2.png)
 
 * MUSCLE BUILDING PROGRAM - THE FINISHED PROGRAMS
-    * 
+    * With the frequency chosen the user's type specific program will be built and displayed on screen.
+    * Underneath the program the user will also see notes on the program such as what order to complete the workouts in and when they should take rest days.
+
+![Finished Program](docs/readmepics/finished_program.png)
+
+* After the program and program info has been built and displayed the user will be presented with one more choice.
+    * They can go to the Strength Building Program section
+    * They can go back to the Muscle Building Program section
+    * Or they can return to the main menu of the application
+
+![End Choice](docs/readmepics/end_choice.png)

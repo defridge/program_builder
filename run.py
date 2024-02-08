@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 valid_yes_response = ["Yes", "yes", "YES", "y", "Y"]
 valid_no_response = ["No", "no", "NO", "n", "N"]
@@ -23,6 +24,7 @@ def main_menu():
             else:
                 if response in valid_no_response:
                     print("That's no problem! Come back when you are ready!")
+                    exit()
                 else:
                     print("Invalid response. Please enter 'Yes' or 'No'.")
         except ValueError:
@@ -54,9 +56,10 @@ def par_q_medical_form():
             if answer in valid_yes_response:
                 print(f"Question {i} answered 'Yes'. "
                       "Please obtain medical clearance before continuing.")
+                exit()
                 return
 
-        print("Thank you! You are clear to proceed.\n")
+        os.system("clear")
         program_options()
         break
 
@@ -66,6 +69,7 @@ def program_options():
     Display options for program type so the user can choose.
     """
 
+    print("Thank you! You are clear to proceed.\n")
     print("Please choose for one of the following options below\n")
     print("............................")
     print("1. Muscle Building Program")
@@ -80,11 +84,11 @@ def program_options():
             continue
 
         if option == 1:
-            print("Thank you!\n")
+            os.system("clear")
             muscle_building_program()
             break
         elif option == 2:
-            print("Thank you!\n")
+            os.system("clear")
             strength_building_program()
             break
         else:
@@ -96,9 +100,10 @@ def muscle_building_program():
     Function to gather info to start building a Muscle Building gym program.
     """
 
+    print("Thank you!\n")
     print("To create the best Muscle\nBuilding Gym Program "
           "for you we have a few questions to ask.\n")
-    print("What type of training split are you looking for? \n")
+    print("What type of training split are you looking for?\n")
     print("1. Full Body Training Split")
     print("2. Upper/Lower Training Split")
     print("3. Push, Pull, Legs Training Split\n")
@@ -111,6 +116,7 @@ def muscle_building_program():
             continue
 
         if option == 1:
+            os.system("clear")
             print("Thank you! \n")
             print("How many days a week would you like the program to be? \n")
             print("1. I would like to train 2 days per week")
@@ -125,20 +131,21 @@ def muscle_building_program():
                     break
 
                 if option == 1:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     two_days_per_wk_full_body_muscle_building_program()
                     break
                 elif option == 2:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     three_days_per_wk_full_body_muscle_building_program()
                     break
                 elif option == 3:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     four_days_per_wk_full_body_muscle_building_program()
                     break
                 else:
                     print("Invalid Choice")
         elif option == 2:
+            os.system("clear")
             print("Thank you! \n")
             print("How many days a week would you like the program to be? \n")
             print("1. I would like to train 2 days per week")
@@ -153,20 +160,21 @@ def muscle_building_program():
                     break
 
                 if option == 1:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     two_days_per_wk_upper_lower_muscle_building_program()
                     break
                 elif option == 2:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     three_days_per_wk_upper_lower_muscle_building_program()
                     break
                 elif option == 3:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     four_days_per_wk_upper_lower_muscle_building_program()
                     break
                 else:
                     print("Invalid Choice")
         elif option == 3:
+            os.system("clear")
             print("Thank you! \n")
             print("How many days a week would you like the program to be? \n")
             print("1. I would like to train 3 days per week")
@@ -181,15 +189,15 @@ def muscle_building_program():
                     break
 
                 if option == 1:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     three_days_per_wk_push_pull_legs_muscle_building_program()
                     break
                 elif option == 2:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     four_days_per_wk_push_pull_legs_muscle_building_program()
                     break
                 elif option == 3:
-                    print("Thank you! Building your program now...\n")
+                    os.system("clear")
                     five_six_days_per_wk_p_p_l_muscle_building_program()
                     break
                 else:
@@ -204,6 +212,7 @@ def two_days_per_wk_full_body_muscle_building_program():
     full body muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 2 Day Per Week, "
           "Full Body Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -226,6 +235,8 @@ def two_days_per_wk_full_body_muscle_building_program():
     print("Please allow for at least one day off between Day's 1 and 2\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -235,6 +246,7 @@ def three_days_per_wk_full_body_muscle_building_program():
     full body muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 3 Day Per Week, "
           "Full Body Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -266,6 +278,8 @@ def three_days_per_wk_full_body_muscle_building_program():
     print("Please allow for at least one day off between Day's 1, 2 and 3\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -275,6 +289,7 @@ def four_days_per_wk_full_body_muscle_building_program():
     full body muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 4 Day Per Week, "
           "Full Body Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -314,6 +329,8 @@ def four_days_per_wk_full_body_muscle_building_program():
           "Day's 1, 2, 3 and 4\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -323,6 +340,7 @@ def two_days_per_wk_upper_lower_muscle_building_program():
     upper/lower muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 2 Day Per Week, "
           "Upper/Lower Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -342,6 +360,8 @@ def two_days_per_wk_upper_lower_muscle_building_program():
           "off between Upper and Lower days\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -351,6 +371,7 @@ def three_days_per_wk_upper_lower_muscle_building_program():
     upper/lower muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 3 Day Per Week, "
           "Upper/Lower Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -387,6 +408,8 @@ def three_days_per_wk_upper_lower_muscle_building_program():
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -396,6 +419,7 @@ def four_days_per_wk_upper_lower_muscle_building_program():
     upper/lower muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 4 Day Per Week, "
           "Upper/Lower Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -430,6 +454,8 @@ def four_days_per_wk_upper_lower_muscle_building_program():
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -439,6 +465,7 @@ def three_days_per_wk_push_pull_legs_muscle_building_program():
     push/pull/legs muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 3 Day Per Week, "
           "Push/Pull/Legs Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -461,6 +488,8 @@ def three_days_per_wk_push_pull_legs_muscle_building_program():
     print("Please allow for at least one day off between training days days\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -470,6 +499,7 @@ def four_days_per_wk_push_pull_legs_muscle_building_program():
     push/pull/legs muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 4 Day Per Week, "
           "Push/Pull/Legs Split, Muscle Building Program")
     print("Please find you program below: \n")
@@ -512,7 +542,9 @@ def four_days_per_wk_push_pull_legs_muscle_building_program():
     print("Week 3: Legs 1, Push 2, Pull 2, Legs 2")
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey\n!")
+          "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -522,6 +554,7 @@ def five_six_days_per_wk_p_p_l_muscle_building_program():
     push/pull/legs muscle building program to the console.
     """
 
+    print("Thank you! Building your program now...\n")
     print("You have chosen a 5/6 Day Per Week, "
           "Push/Pull/Legs Split,\nMuscle Building Program")
     print("Please find you program below: \n")
@@ -565,6 +598,8 @@ def five_six_days_per_wk_p_p_l_muscle_building_program():
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey\n!")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -613,6 +648,7 @@ def strength_building_program():
     bench_1rm = calculate_1rm(bench_reps, bench_weight)
     deadlift_1rm = calculate_1rm(deadlift_reps, deadlift_weight)
 
+    os.system("clear")
     print("Calculating 1RM's...\n")
     print(f"Your estimated Squat 1RM is {squat_1rm}kg\n")
     print(f"Your estiamted Bench 1RM is {bench_1rm}kg\n")
@@ -620,10 +656,10 @@ def strength_building_program():
     print("Creating Strength Building Program...\n")
     print("Please find you program below: \n")
     print("\tDay 1")
-    print(f"\tBarbell Bench Press,           4 sets, of "
-          f"{int(bench_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest")
-    print(f"\tDeadlift                       4 sets, of "
-          f"{int(deadlift_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
+    print(f"\tBarbell Bench Press,           4 sets, of\n"
+          f"\t{int(bench_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest")
+    print(f"\tDeadlift                       4 sets, of\n"
+          f"\t{int(deadlift_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
     print("\tLeg Extension,                 1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tLat Pulldown,                  1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRear Delt Flyes,               1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -638,8 +674,8 @@ def strength_building_program():
     print("\tNarrow Grip Rows,              1-2 sets, 5-8 reps, "
           "2-3 mins rest\n")
     print("\tDay 3")
-    print(f"\tSquat,                         4 sets, of "
-          f"{int(squat_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
+    print(f"\tSquat,                         4 sets, of\n"
+          f"\t{int(squat_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
     print("\tSeated Leg Curl,               1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRDL,                           1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tIncline Bench Press,           1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -652,6 +688,8 @@ def strength_building_program():
           "is 80% of your 1 rep max\n")
     print("Thank you for using this online Program Builder!\n"
           "We wish you all the best with your fitness journey!\n")
+    input("Press any key and Enter to continue.\n")
+    os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()
 
 
@@ -665,6 +703,7 @@ def exit_or_restart():
     print("1. Go to Strength Building Program")
     print("2. Go to Muscle Building Program")
     print("3. Main Menu")
+    print("4. Exit")
     print("............................\n")
 
     while True:
@@ -675,13 +714,18 @@ def exit_or_restart():
             continue
 
         if option == 1:
+            os.system("clear")
             strength_building_program()
             break
         elif option == 2:
+            os.system("clear")
             muscle_building_program()
             break
         elif option == 3:
+            os.system("clear")
             main_menu()
+        elif option == 4:
+            exit()
         else:
             print("Invalid Choice")
 
