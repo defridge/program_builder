@@ -597,7 +597,7 @@ def five_six_days_per_wk_p_p_l_muscle_building_program():
     print("Week 1 (6 days): Push 1, Pull 1, Legs 1, Push 2, Pull 2, Legs 3")
     print("etc etc...\n")
     print("Thank you for using this online Program Builder!\n"
-          "We wish you all the best with your fitness journey\n!")
+          "We wish you all the best with your fitness journey!\n")
     input("Press any key and Enter to continue.\n")
     os.system('cls' if os.name == 'nt' else 'clear')
     exit_or_restart()

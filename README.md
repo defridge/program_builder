@@ -39,8 +39,6 @@ This Python based Program Builder is designed to allow the user to create a cust
 
 * If the user answers “No” to all questions they will be clear to proceed to the next section of the app.
 
-![No response to Par-Q Questions](docs/readmepics/no_par_q.png)
-
 * PROGRAM OPTIONS
     * After the user has passed the medical questions they are asked to choose from 2 types of gym program.
         * Muscle Building Program
@@ -73,9 +71,10 @@ This Python based Program Builder is designed to allow the user to create a cust
 
 ![Finished Program](docs/readmepics/finished_program.png)
 
-* After the program and program info has been built and displayed the user will be presented with one more choice.
+* After the program and program info has been built and displayed the user will asked to press any key and enter to continue and then be presented with another menu with the following options
     * They can go to the Strength Building Program section
     * They can go back to the Muscle Building Program section
-    * Or they can return to the main menu of the application
+    * They can go back to the Main Menu
+    * They can exit the app
 
 ![End Choice](docs/readmepics/end_choice.png)
