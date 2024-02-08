@@ -37,11 +37,10 @@ def par_q_medical_form():
     while True:
         questions = [
             "Do you have a heart condition?",
-            "When you do physical activity, do you feel pain in your chest?",
+            "When you do exercise, do you feel pain in your chest?",
             "Are you pregnant?",
             "Do you have a joint or bone problem?",
-            "Do you ever lose consciousness or "
-            "Do you lose your balance because of dizziness?"
+            "Do you ever lose your balance because of dizziness?"
         ]
 
         for i, question in enumerate(questions, start=1):
