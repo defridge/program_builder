@@ -607,6 +607,10 @@ def calculate_1rm(reps, weight):
     """
     Estimate 1RM based on the number of reps performed with a certain weight.
     The 1RM will be calculated using the Brzycki formula.
+
+    :param reps: Number of repetitions performed.
+    :param weight: Weight used for the repetitions.
+    :return: Estimated 1RM.
     """
 
     x = weight / (1.0278 - 0.0278 * reps)
