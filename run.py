@@ -48,7 +48,7 @@ def par_q_medical_form():
         for i, question in enumerate(questions, start=1):
             while True:
                 answer = input(f"Question {i}: {question} (Yes/No)\n").lower()
-                if answer in valid_yes_response or valid_no_response:
+                if answer in valid_yes_response or answer in valid_no_response:
                     break
                 else:
                     print("Invalid input. Please enter 'Yes' or 'No'.")
@@ -57,7 +57,7 @@ def par_q_medical_form():
                 print(f"Question {i} answered 'Yes'. "
                       "Please obtain medical clearance before continuing.")
                 exit()
-                return
+                
 
         os.system("clear")
         program_options()
