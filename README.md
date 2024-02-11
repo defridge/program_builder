@@ -103,3 +103,17 @@ This Python based Program Builder is designed to allow the user to create a cust
 * Like with the muscle building program the user will be then taken to the final section which will allow them to restart the strength building program section, go to the muscle building program section, go to the main menu or exit the app.
 
 ![Finished Strength Building Program](docs/readmepics/strength_building_program.png)
+
+## Logical Flow
+
+* Main Menu
+
+![Flow Main Menu](docs/flowcharts/flow_main_menu.png)
+
+* Medical Par-Q Questions
+
+![Flow Par-Q](docs/flowcharts/flow_parq.png)
+
+* Program Menu
+
+![Flow Program Menu](docs/flowcharts/flow_program_options.png)
