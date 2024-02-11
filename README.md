@@ -102,7 +102,7 @@ This Python based Program Builder is designed to allow the user to create a cust
 * Finished strength building program showing the 80% of 1RM's calculated along with some info about the program below.
 * Like with the muscle building program the user will be then taken to the final section which will allow them to restart the strength building program section, go to the muscle building program section, go to the main menu or exit the app.
 
-![Finished Strength Building Program](docs/readmepics/strength_building_program.png)
+![Finished Strength Building Program](docs/readmepics/finished_strength_program.png)
 
 ## Logical Flow
 
@@ -117,3 +117,24 @@ This Python based Program Builder is designed to allow the user to create a cust
 * Program Menu
 
 ![Flow Program Menu](docs/flowcharts/flow_program_options.png)
+
+* Muscle Building Program
+
+![Flow Muscle Building Program](docs/flowcharts/flow_muscle_building.png)
+
+* Muscle Building Program Part 2
+
+![Flow Full Body](docs/flowcharts/flow_full_body.png)
+![Flow Upper Lower](docs/flowcharts/flow_upper_lower.png)
+![Flow PPL](docs/flowcharts/flow_ppl.png)
+
+* Strength Building Program
+
+![Flow Strength Building](docs/flowcharts/flow_strenght_building.png)
+
+* End/Exit Function
+
+![End/Exit Function](docs/flowcharts/flow_end_exit.png)
+
+
+
