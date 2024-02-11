@@ -78,3 +78,14 @@ This Python based Program Builder is designed to allow the user to create a cust
     * They can exit the app
 
 ![End Choice](docs/readmepics/end_choice.png)
+
+* STRENGTH BUILDING PROGRAM
+    * The second option the user has in terms of type of program is a Strength Building Program.
+    * In this section the user will be asked to input some info from the previous workouts in order to allow for the app to work out starting weights when the final program is designed.
+    * The user is asked to input the weight they lifted in kg and for how many reps for the exercises Squat, Bench, and Deadlift.
+    * The user will be asked to enter this info 1 at a time and then the custom program will be built.
+    * If the user has never performed these lifts before they are instructed to first perform these exercises in a gym first for a few sessions and then return to the app to enter the info.
+
+![Strength Building Program](docs/readmepics/strength_building_program.png)
+
+* 

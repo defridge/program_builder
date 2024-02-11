@@ -657,16 +657,18 @@ def strength_building_program():
 
     os.system("clear")
     print("Calculating 1RM's...\n")
-    print(f"Your estimated Squat 1RM is {squat_1rm}kg\n")
-    print(f"Your estimated Bench 1RM is {bench_1rm}kg\n")
-    print(f"Your estimated Deadlift 1RM is {deadlift_1rm}kg\n")
-    print("Creating Strength Building Program...\n")
+    print(f"Your estimated Squat 1RM is {squat_1rm}kg")
+    print(f"Your estimated Bench 1RM is {bench_1rm}kg")
+    print(f"Your estimated Deadlift 1RM is {deadlift_1rm}kg")
+    print("Creating Strength Building Program...")
     print("Please find you program below: \n")
     print("\tDay 1")
     print(f"\tBarbell Bench Press,           4 sets, of\n"
-          f"\t{int(bench_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest")
+          f"\t                               {int(bench_1rm * 0.80)}kg "
+          "for 2-3 reps, 4-5 mins rest")
     print(f"\tDeadlift                       4 sets, of\n"
-          f"\t{int(deadlift_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
+          f"\t                               {int(deadlift_1rm * 0.80)}kg "
+          "for 2-3 reps, 4-5 mins rest\n")
     print("\tLeg Extension,                 1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tLat Pulldown,                  1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRear Delt Flyes,               1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -682,7 +684,8 @@ def strength_building_program():
           "2-3 mins rest\n")
     print("\tDay 3")
     print(f"\tSquat,                         4 sets, of\n"
-          f"\t{int(squat_1rm * 0.80)}kg for 2-3 reps, 4-5 mins rest\n")
+          f"\t                               {int(squat_1rm * 0.80)}kg "
+          "for 2-3 reps, 4-5 mins rest\n")
     print("\tSeated Leg Curl,               1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRDL,                           1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tIncline Bench Press,           1-2 sets, 5-8 reps, 2-3 mins rest")
