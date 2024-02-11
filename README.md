@@ -8,7 +8,7 @@ This Python based Program Builder is designed to allow the user to create a cust
 
 ### Site Goals
 
-* The goal of the site is to provide the user with a very simple but detailed approach to creating a gym program tailored to thier goals.
+* The goal of the site is to provide the user with a very simple but detailed approach to creating a gym program tailored to their goals.
 
 ### Target Audience
 
