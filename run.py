@@ -666,9 +666,9 @@ def strength_building_program():
     print(f"\tBarbell Bench Press,           4 sets, of\n"
           f"\t                               {int(bench_1rm * 0.80)}kg "
           "for 2-3 reps, 4-5 mins rest")
-    print(f"\tDeadlift                       4 sets, of\n"
+    print(f"\tDeadlift,                      4 sets, of\n"
           f"\t                               {int(deadlift_1rm * 0.80)}kg "
-          "for 2-3 reps, 4-5 mins rest\n")
+          "for 2-3 reps, 4-5 mins rest")
     print("\tLeg Extension,                 1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tLat Pulldown,                  1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRear Delt Flyes,               1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -676,7 +676,7 @@ def strength_building_program():
           "2-3 mins rest\n")
     print("\tDay 2")
     print("\tShoulder Press,                4 sets, 2-3 reps, 4-5 mins rest")
-    print("\tPull Ups,                      4 sets, 2-3 reps, 4-5 mins rest\n")
+    print("\tPull Ups,                      4 sets, 2-3 reps, 4-5 mins rest")
     print("\tPec Dec,                       1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tBulgarian Split Squat,         1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tHip Thrust,                    1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -685,7 +685,7 @@ def strength_building_program():
     print("\tDay 3")
     print(f"\tSquat,                         4 sets, of\n"
           f"\t                               {int(squat_1rm * 0.80)}kg "
-          "for 2-3 reps, 4-5 mins rest\n")
+          "for 2-3 reps, 4-5 mins rest")
     print("\tSeated Leg Curl,               1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tRDL,                           1-2 sets, 5-8 reps, 2-3 mins rest")
     print("\tIncline Bench Press,           1-2 sets, 5-8 reps, 2-3 mins rest")
@@ -693,7 +693,7 @@ def strength_building_program():
     print("\tTricep Pushdown,               1-2 sets, 5-8 reps, "
           "2-3 mins rest\n")
 
-    print("Please allow for at least one day off between Day's 1, 2, and 3\n")
+    print("Please allow for at least one day off between Day's 1, 2, and 3")
     print("The weight to be lifted in the\nSquat, Bench, and Deadlift "
           "is 80% of your 1 rep max\n")
     print("Thank you for using this online Program Builder!\n"

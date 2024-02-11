@@ -88,4 +88,18 @@ This Python based Program Builder is designed to allow the user to create a cust
 
 ![Strength Building Program](docs/readmepics/strength_building_program.png)
 
-* 
+* After the user enters the required exercise info the app will calculate their 1 rep max on all 3 lifts and display that info.
+* Below the 1 rep max info the app will create the strength building program.
+* The app will then calculate 80% of the 1 rep max on all 3 lifts and insert this weight into the program to give the user the appropriate starting point to help them maximize strength gains.
+
+![1 Rep Max](docs/readmepics/1_rep_max.png)
+
+
+* 1RM (1 rep max) calculating based off the user input.
+
+![Calculated 1RM](docs/readmepics/calculated_1rm.png)
+
+* Finished strength building program showing the 80% of 1RM's calculated along with some info about the program below.
+* Like with the muscle building program the user will be then taken to the final section which will allow them to restart the strength building program section, go to the muscle building program section, go to the main menu or exit the app.
+
+![Finished Strength Building Program](docs/readmepics/strength_building_program.png)
