@@ -127,8 +127,7 @@ def muscle_building_program():
                     option = int(input("Enter your choice here: \n"))
                 except ValueError:
                     print("Please enter a number")
-                    continue
-                    break
+                    continue        
 
                 if option == 1:
                     os.system("clear")
@@ -157,7 +156,6 @@ def muscle_building_program():
                 except ValueError:
                     print("Please enter a number")
                     continue
-                    break
 
                 if option == 1:
                     os.system("clear")
@@ -186,7 +184,6 @@ def muscle_building_program():
                 except ValueError:
                     print("Please enter a number")
                     continue
-                    break
 
                 if option == 1:
                     os.system("clear")
