@@ -174,4 +174,22 @@ To this date app is functioning as expected with no issues or bugs.
 
 With more time in the future the plan is to implement some color using colorama Python Package.
 
+## Deployment
 
+### Heroku Deployment
+
+Please find steps below for deployment to Heroku
+
+* Go to Heroku, sign in and click "New" to create a new app.
+* Choose an app name and region (Europe), click "Create app".
+* Go to "Settings" and navigate to Config Vars. Add the following config variables:
+    * PORT : 8000
+* Navigate to "Deploy". Set the deployment method to Github and enter repository name and connect.
+* Scroll down to Manual Deploy, select "main" branch and click "Deploy Branch".
+* The app will now be deployed to heroku
+
+## Credits
+
+* [w3schools](https://www.w3schools.com/python/default.asp) was used throughout the project as a reference when writing Python code.
+* The formula to calculate 1RM was taken from [brainmac.co.uk](https://www.brianmac.co.uk/maxload.htm)
+* My Mentor Gareth McGirr for his guidance and support throughout my project
