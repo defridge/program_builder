@@ -136,5 +136,16 @@ This Python based Program Builder is designed to allow the user to create a cust
 
 ![End/Exit Function](docs/flowcharts/flow_end_exit.png)
 
+## Testing
+
+### Functional Testing
+
+Below you will see a breakdown of all tests carried out on the app to ensure it functions as intended:
+
+![Main Menu Testing](docs/testing/main_menu_test.png)
+![Program Options Testing](docs/testing/program_options_test.png)
+![Muscle Building Testing](docs/testing/muscle_building_test.png)
+![Workouts Testing](docs/testing/muscle_building_strength_workouts_test.png)
+![Exit/Restart Menu Testing](docs/testing/exit_restart_test.png)
 
 
