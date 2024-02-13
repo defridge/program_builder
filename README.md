@@ -136,6 +136,14 @@ This Python based Program Builder is designed to allow the user to create a cust
 
 ![End/Exit Function](docs/flowcharts/flow_end_exit.png)
 
+## Technologies
+
+* Python - Python was the main language used to build the application
+* Python Modules - numPy and os modules used for 1 rep max calculations and to clear the screen when going from one section to another in the app
+* IDE - The application was developed using Codeanywhere IDE and VScode
+* Github - The source code is hosted on Github.
+* Git - Git was used to commit and push code during the project.
+
 ## Testing
 
 ### Functional Testing
@@ -147,5 +155,23 @@ Below you will see a breakdown of all tests carried out on the app to ensure it 
 ![Muscle Building Testing](docs/testing/muscle_building_test.png)
 ![Workouts Testing](docs/testing/muscle_building_strength_workouts_test.png)
 ![Exit/Restart Menu Testing](docs/testing/exit_restart_test.png)
+
+### Case Study
+
+A case study was done to check that the calculations preformed by the app were correct when determining a 1 rep max and then 80% of this 1 rep max to use within the strength building program. Details below show app working correctly:
+
+![Case Study](docs/testing/case_study.png)
+
+### Pep8 Validation
+
+When tested using online validator https://pep8ci.herokuapp.com/ no errors were found.
+
+![Pep8 Validator](docs/testing/pep.png)
+
+### Bugs and Fixes
+
+To this date app is functioning as expected with no issues or bugs.
+
+With more time in the future the plan is to implement some color using colorama Python Package.
 
 

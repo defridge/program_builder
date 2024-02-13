@@ -57,7 +57,6 @@ def par_q_medical_form():
                 print(f"Question {i} answered 'Yes'. "
                       "Please obtain medical clearance before continuing.")
                 exit()
-                
 
         os.system("clear")
         program_options()
@@ -127,7 +126,7 @@ def muscle_building_program():
                     option = int(input("Enter your choice here: \n"))
                 except ValueError:
                     print("Please enter a number")
-                    continue        
+                    continue
 
                 if option == 1:
                     os.system("clear")
