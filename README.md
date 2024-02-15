@@ -1,6 +1,6 @@
 # Program Builder
 
-This Python based Program Builder is designed to allow the user to create a custom gym training program that is specific to their needs. The program has 2 options for a gym program, Muscle Building and Strength Building and depending on the information, such as the type of split they would like, the number of days they are looking to train and the weight they lifted on their last gym session the program will build a full workout that the user can follow and take all the guesswork out of their training.
+This Python based Program Builder is designed to allow the user to create a custom gym training program that is specific to their needs. The app has 2 options for a gym program, Muscle Building and Strength Building and depending on the information, such as the type of split they would like, the number of days they are looking to train and the weight they lifted on their last gym session the app will build a full workout that the user can follow and take all the guesswork out of their training. The link to the live site can be found here: [Program Builder](https://program-builder-790334250615.herokuapp.com/).
 
 ![Program Builder Menu Page](docs/readmepics/program_builder.png)
 
